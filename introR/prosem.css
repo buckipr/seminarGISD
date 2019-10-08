@@ -1,0 +1,57 @@
+.red { color: red; }
+.gray { color: gray; }
+.black { color: black; }
+.large { font-size: 130% ; }
+.small { font-size: 70% ; }
+
+img.a {
+  vertical-align: baseline;
+}
+
+img.b {
+  vertical-align: text-top;
+}
+
+img.c {
+  vertical-align: text-bottom;
+}
+
+img.d {
+  vertical-align: sub;
+}
+
+img.e {
+  vertical-align: super;
+}
+
+.remark-slide-content { 
+  font-size: 30px;
+}
+
+.wide-slide {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  font-size: 30px;
+}
+
+pre {
+  max-width: 100%;
+  overflow-x: scroll;
+}
+
+.pre20 {
+  height: 20pc ;
+  overflow-y: scroll;
+}
+
+.pre40 {
+  height: 40pc ;
+  overflow-y: scroll;
+}
+
+.pre60 {
+  height: 60pc ;
+  overflow-y: scroll;
+}

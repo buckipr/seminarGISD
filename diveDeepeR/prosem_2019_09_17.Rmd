@@ -1,0 +1,228 @@
+---
+title: "Diving DeepeR into <br/><br/> ![](https://cran.r-project.org/Rlogo.svg){width=200px}"
+author: "Jason"
+institute: "Institute for Population Research"
+date: "Sept. 17th, 2019"
+output:
+  xaringan::moon_reader:
+    css: ["default", "prosem.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+    yolo: false
+---
+
+```{r, echo=FALSE, include=FALSE}
+library(knitr)
+```
+
+---
+class: wide-slide
+[https://www.asc.ohio-state.edu/thomas.3912/software/](https://www.asc.ohio-state.edu/thomas.3912/software/)
+
+
+
+---
+# Plan for today
+
+* Quick Recap
+
+  + R syntax
+
+  + types of data & data structures (things that hold data)
+
+* Walk through R Scripts for
+
+  + creating & changing data
+  + using `functions()` to summarize our data
+
+---
+#### First Things First
+
+1) Open up R Studio
+
+2) Set working directory
+
+  + `Session` -> `Set Working Director` -> `Choose Directory...`
+  + or you could use the `setwd()` command
+
+```{r eval=FALSE}
+setwd("C:/Users/EWarren/CampaignStats/")
+```
+
+---
+class: center
+background-image: url('rstudio_setwd.png')
+background-size: contain
+
+
+---
+class: wide-slide
+#### First Things First
+
+3) Open up a script, add title, & save
+
+  + `File` -> `New File` -> `R Script`
+
+  + Add a title
+
+      - \# File: Diving DeepeR (2019/09/17)
+
+  + `File` -> `Save As`
+
+      - Don't forget to include the .R file extention: `diving_deeper.R`
+  
+---
+class: center
+background-image: url('rstudio_new_script.png')
+background-size: contain
+
+
+---
+#### R syntax
+
+Choose a name and assign a value/data to that name with the
+assignment 
+
+--
+
+```{r}
+newObject <- 3
+newObject
+```
+
+--
+
+```{r}
+newObject + 4
+newObject_2 <- newObject - log(exp(1))
+```
+
+---
+#### *Data Types* & Data Structures
+
+*A few types of data in R*
+
+* `logical`
+
+* `character`
+
+* numeric
+
+* missing
+
+---
+#### *Data Types*: logical
+
+* `logical` - `TRUE` or `FALSE`
+
+--
+
+```{r}
+is_R_awesome <- TRUE
+is_R_awesome
+```
+
+--
+
+```{r}
+is.logical(is_R_awesome)
+```
+
+---
+#### *Data Types*: character & numeric
+
+*A few types of data in R*
+
+* `character` 
+
+  + `x1 <- "ohio"`
+
+--
+
+* numeric 
+
+  + `integer`: `x2 <- 3`
+  + `double`: `x4 <- 3.14`
+
+
+---
+#### *Data Types*: missing
+Missing values are `NA` (logical by default)
+--
+
+* `NA_integer_`, `NA_double_`, & `NA_character_`
+
+--
+
+```{r, error=TRUE}
+x <- NA_integer  ## huh????
+## how can we check that it is an integer?
+```
+
+---
+#### *Data Types*: missing
+
+`NULL` - empty object (place holder)
+
+* useful when using for loops and you need a place to store
+objects as you step through the loop
+
+---
+#### Data Types & *Data Structures*
+
+* R has different structures for holding data, which can be 
+organized by...
+
+    + how many dimensions does it have?
+    + do the types of data need to be the same?
+
+---
+#### Data Structures: vectors
+
+**Vectors** 
+1. 1 dimension
+1. same data type
+    + these are called **atomic**
+    + special case: **factor** (predefined categories)
+
+---
+#### Data Structures: matrices & arrays
+
+**Matrices**
+  1. rows and columns
+  1. same data type
+
+--
+
+**Arrays**
+
+  1. any number of dimensions
+  2. same data type
+
+
+---
+#### Data Structures: data frames & lists
+
+**Data Frames** (*tibbles* are similar)
+
+  1. rows and columns
+  1. different data types
+
+--
+
+**Lists**
+
+  1. 1 dimension
+  1. different data types (with any dimension)
+      + (not atomic)
+
+---
+class: wide-slide
+#### Now let's walk through the scripts...
+
+<br> 
+
+[https://www.asc.ohio-state.edu/thomas.3912/software/](https://www.asc.ohio-state.edu/thomas.3912/software/)
