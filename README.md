@@ -1,4 +1,4 @@
-# seminarGSID
+# seminarGISD
 
 Materials for the Seminar for the Graduate Interdisciplinary Specialization in Demography
 
