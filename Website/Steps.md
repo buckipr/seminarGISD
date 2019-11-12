@@ -20,3 +20,8 @@
 9. change menu to false - contents/ each folder
 10. theme - [https://sourcethemes.com/academic/themes/](https://sourcethemes.com/academic/themes/)
 11. Customization - [https://sourcethemes.com/academic/docs/page-builder/](https://sourcethemes.com/academic/docs/page-builder/)
+
+## Checking for Errors
+
+In your Netflify account, the **Deploys** page (link near the top) will have additional information for
+any errors.
